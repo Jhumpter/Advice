@@ -1,7 +1,8 @@
 ﻿using Conselho;
+using System.Text;
 using System.Text.Json;
 
-Console.WriteLine("Digite algo para receber um conselho!");
+Console.WriteLine("Type something to get advice");
 Console.ReadLine();
 
 using (HttpClient client = new HttpClient())
@@ -17,5 +18,3 @@ using (HttpClient client = new HttpClient())
         Console.WriteLine($"We have a problem ({ex.Message})");
     }
 }
-
-
